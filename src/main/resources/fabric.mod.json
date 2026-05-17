@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ssc-perma-form-storage",
+	"version": "${version}",
+	"name": "SSC Perma Form Storage",
+	"description": "Allows you to store and collect your Permanent Forms to reuse later!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ssc-perma-form-storage/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"wonky.sscpermaformstorage.SSCPermaFormStorage"
+		],
+		"client": [
+			"wonky.sscpermaformstorage.SSCPermaFormStorageClient"
+		],
+		"fabric-datagen": [
+			"wonky.sscpermaformstorage.SSCPermaFormStorageDataGenerator"
+		]
+	},
+	"mixins": [
+		"ssc-perma-form-storage.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
