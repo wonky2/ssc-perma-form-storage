@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import wonky.sscpermaformstorage.SSCPermaFormStorage;
 
 public class ModItems {
-    public static final Item GILDED_ECHO_SHARD = registerItem("gilded_echo_shard", new Item(new FabricItemSettings()));
+    public static final Item GILDED_ECHO_SHARD = registerItem("gilded_echo_shard", new Item(new FabricItemSettings().food(ModFoodComponents.GILDED_ECHO_SHARD)));
     public static final Item CRACKED_GILDED_ECHO_SHARD = registerItem("cracked_gilded_echo_shard", new Item(new FabricItemSettings()));
 
     private static void addItems(FabricItemGroupEntries entries) {

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:smithing_transform",
+
+    "template": {
+        "item": "minecraft:netherite_ingot"
+    },
+    "base": {
+        "item": "minecraft:echo_shard"
+    },
+    "addition": {
+        "item": "minecraft:gold_block"
+    },
+    "result": {
+        "item": "ssc-perma-form-storage:gilded_echo_shard"
+    }
+}
