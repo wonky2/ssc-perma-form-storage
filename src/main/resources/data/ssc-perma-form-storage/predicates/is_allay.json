@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": "{cardinal_components:{\"shape-shifter-curse:player_form\":{currentForm:\"shape-shifter-curse:allay_sp\"}}}"
+    }
+}

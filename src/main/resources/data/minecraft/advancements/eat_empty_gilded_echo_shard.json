@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "example": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "ssc-perma-form-storage:empty_gilded_echo_shard"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ssc-perma-form-storage:revert_tf"
+    }
+}

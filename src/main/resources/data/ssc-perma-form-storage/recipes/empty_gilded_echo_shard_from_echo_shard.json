@@ -2,7 +2,7 @@
     "type": "minecraft:smithing_transform",
 
     "template": {
-        "item": "minecraft:netherite_ingot"
+        "item": "shape-shifter-curse:morphscale_core"
     },
     "base": {
         "item": "minecraft:echo_shard"
@@ -11,6 +11,6 @@
         "item": "minecraft:gold_block"
     },
     "result": {
-        "item": "ssc-perma-form-storage:gilded_echo_shard"
+        "item": "ssc-perma-form-storage:empty_gilded_echo_shard"
     }
 }

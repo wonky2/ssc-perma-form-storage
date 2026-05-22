@@ -12,10 +12,15 @@ import wonky.sscpermaformstorage.SSCPermaFormStorage;
 
 public class ModItems {
     public static final Item GILDED_ECHO_SHARD = registerItem("gilded_echo_shard", new Item(new FabricItemSettings().food(ModFoodComponents.GILDED_ECHO_SHARD)));
+    public static final Item EMPTY_GILDED_ECHO_SHARD = registerItem("empty_gilded_echo_shard", new Item(new FabricItemSettings().food(ModFoodComponents.EMPTY_GILDED_ECHO_SHARD)));
     public static final Item CRACKED_GILDED_ECHO_SHARD = registerItem("cracked_gilded_echo_shard", new Item(new FabricItemSettings()));
 
-    private static void addItems(FabricItemGroupEntries entries) {
+    private static void addFoodItems(FabricItemGroupEntries entries) {
         entries.add(GILDED_ECHO_SHARD);
+        entries.add(EMPTY_GILDED_ECHO_SHARD);
+    }
+
+    private static void addIngredientItems(FabricItemGroupEntries entries) {
         entries.add(CRACKED_GILDED_ECHO_SHARD);
     }
 
@@ -26,7 +31,7 @@ public class ModItems {
     public static void registerModItems() {
         SSCPermaFormStorage.LOGGER.info("Registering " + SSCPermaFormStorage.MOD_ID + "items.");
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItems);
-        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.SSC_GROUP).register(ModItems::addItems); // for shape shifter curse
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addFoodItems);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addIngredientItems);
     }
 }

@@ -11,8 +11,8 @@ import wonky.sscpermaformstorage.item.ModItems;
 
 import java.util.Objects;
 
-public class GildedEchoShardItem extends Item {
-    public GildedEchoShardItem(Settings settings) {
+public class EmptyGildedEchoShardItem extends Item {
+    public EmptyGildedEchoShardItem(Settings settings) {
         super(settings);
     }
 
@@ -26,6 +26,6 @@ public class GildedEchoShardItem extends Item {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         ItemStack itemStack = super.finishUsing(stack, world, user);
         Objects.requireNonNull(user);
-        return user instanceof PlayerEntity && ((PlayerEntity)user).getAbilities().creativeMode ? itemStack : new ItemStack(ModItems.CRACKED_GILDED_ECHO_SHARD);
+        return user instanceof PlayerEntity && ((PlayerEntity)user).getAbilities().creativeMode ? itemStack : new ItemStack(ModItems.GILDED_ECHO_SHARD);
     }
 }
