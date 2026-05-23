@@ -17,12 +17,6 @@
 	"entrypoints": {
 		"main": [
 			"wonky.sscpermaformstorage.SSCPermaFormStorage"
-		],
-		"client": [
-			"wonky.sscpermaformstorage.SSCPermaFormStorageClient"
-		],
-		"fabric-datagen": [
-			"wonky.sscpermaformstorage.SSCPermaFormStorageDataGenerator"
 		]
 	},
 	"mixins": [
