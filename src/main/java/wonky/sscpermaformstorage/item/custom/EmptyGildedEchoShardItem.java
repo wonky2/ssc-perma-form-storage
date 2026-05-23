@@ -18,14 +18,12 @@ public class EmptyGildedEchoShardItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        // data get entity @s cardinal_components."shape-shifter-curse:player_form".currentForm
-
         return super.use(world, user, hand);
     }
 
-    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        ItemStack itemStack = super.finishUsing(stack, world, user);
-        Objects.requireNonNull(user);
-        return user instanceof PlayerEntity && ((PlayerEntity)user).getAbilities().creativeMode ? itemStack : new ItemStack(ModItems.GILDED_ECHO_SHARD);
-    }
+    //public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+    //    ItemStack itemStack = super.finishUsing(stack, world, user);
+    //    Objects.requireNonNull(user);
+    //    return user instanceof PlayerEntity && ((PlayerEntity)user).getAbilities().creativeMode ? itemStack : new ItemStack(ModItems.GILDED_ECHO_SHARD);
+    //}
 }
