@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "eat_it": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["ssc-perma-form-storage:gilded_echo_shard"],
+          "nbt": "{storedForm: \"allay_sp\"}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ssc-perma-form-storage:become_allay"
+  }
+}
