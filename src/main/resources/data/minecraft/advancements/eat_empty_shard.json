@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "ssc-perma-form-storage:revert_tf"
+        "function": "ssc-perma-form-storage:become_human"
     }
 }
