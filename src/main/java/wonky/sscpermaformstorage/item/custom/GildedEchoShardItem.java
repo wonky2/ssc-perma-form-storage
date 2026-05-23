@@ -18,8 +18,6 @@ public class GildedEchoShardItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        // data get entity @s cardinal_components."shape-shifter-curse:player_form".currentForm
-
         return super.use(world, user, hand);
     }
 
