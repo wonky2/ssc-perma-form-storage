@@ -1,5 +1,7 @@
 advancement revoke @s only minecraft:eat_empty_shard
 
+execute unless predicate ssc-perma-form-storage:is_perma_form run give @s ssc-perma-form-storage:empty_gilded_echo_shard
+
 execute if predicate ssc-perma-form-storage:is_anubis_wolf run give @s ssc-perma-form-storage:gilded_echo_shard{display:{Name:'[{"text":"Gilded Echo Shard (Anubis Wolf)","italic":false,"color":"light_purple"}]'},Tags:{storedForm:"anubis_wolf_3"}}
 execute if predicate ssc-perma-form-storage:is_axolotl run give @s ssc-perma-form-storage:gilded_echo_shard{display:{Name:'[{"text":"Gilded Echo Shard (Axolotl)","italic":false,"color":"light_purple"}]'},Tags:{storedForm:"axolotl_3"}}
 execute if predicate ssc-perma-form-storage:is_bat run give @s ssc-perma-form-storage:gilded_echo_shard{display:{Name:'[{"text":"Gilded Echo Shard (Bat)","italic":false,"color":"light_purple"}]'},Tags:{storedForm:"bat_3"}}
