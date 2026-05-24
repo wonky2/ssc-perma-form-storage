@@ -1,0 +1,54 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"shape-shifter-curse:player_form\":{currentForm:\"shape-shifter-curse:anubis_wolf_3\"}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"shape-shifter-curse:player_form\":{currentForm:\"shape-shifter-curse:axolotl_3\"}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"shape-shifter-curse:player_form\":{currentForm:\"shape-shifter-curse:bat_3\"}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"shape-shifter-curse:player_form\":{currentForm:\"shape-shifter-curse:familiar_fox_3\"}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"shape-shifter-curse:player_form\":{currentForm:\"shape-shifter-curse:ocelot_3\"}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"shape-shifter-curse:player_form\":{currentForm:\"shape-shifter-curse:snow_fox_3\"}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"shape-shifter-curse:player_form\":{currentForm:\"shape-shifter-curse:spider_3\"}}}"
+            }
+        }
+    ]
+}
